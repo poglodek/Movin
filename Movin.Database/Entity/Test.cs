@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Movin.Database.Enum;
+
+namespace Movin.Database.Entity
+{
+    public class Test
+    {
+        [Key]
+        public int Id { get; set; }
+
+        public TestType TestType { get; set; }
+        public string TestName { get; set; }
+        public bool TestEnable { get; set; }
+        public int TestIntervalInSeconds { get; set; }
+        public bool SaveTestToDatabase { get; set; } = true;
+        public bool LogTestToFile { get; set; } = false;
+        public string TestFileName { get; set; }
+        public string TestFilePath { get; set; }
+        public bool SendEmailWhenTestFailure { get; set; } = false;
+        public List<Host> Hosts { get; set; }
+        public List<TestResult> TestResults { get; set; }
+    }
+}
