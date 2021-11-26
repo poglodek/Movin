@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "VOLp2yZ5+TuqZF6UARhCBwpeZgxWE46LM05kATp1bIMDmARi/i/2zgRwcAbrWlS1qwniV3r8VEjdcdYiD+Lh9w==",
+  "success": true,
+  "projectFilePath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin\\Movin.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Pablo\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512"
+  ],
+  "logs": []
+}
