@@ -27,7 +27,6 @@ namespace Movin.Database
         }
 
         public DbSet<Host> Hosts { get; set; }
-        public DbSet<Port> Ports { get; set; }
         public DbSet<Test> Tests { get; set; }
         public DbSet<TestResult> Results { get; set; }
         public DbSet<User> Users { get; set; }

@@ -1,0 +1,12 @@
+C:\Programing\CSharp ASP NET\Movin\Movin.Schedule\bin\Debug\net6.0\Movin.Schedule.deps.json
+C:\Programing\CSharp ASP NET\Movin\Movin.Schedule\bin\Debug\net6.0\Movin.Schedule.dll
+C:\Programing\CSharp ASP NET\Movin\Movin.Schedule\bin\Debug\net6.0\ref\Movin.Schedule.dll
+C:\Programing\CSharp ASP NET\Movin\Movin.Schedule\bin\Debug\net6.0\Movin.Schedule.pdb
+C:\Programing\CSharp ASP NET\Movin\Movin.Schedule\obj\Debug\net6.0\Movin.Schedule.csproj.AssemblyReference.cache
+C:\Programing\CSharp ASP NET\Movin\Movin.Schedule\obj\Debug\net6.0\Movin.Schedule.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programing\CSharp ASP NET\Movin\Movin.Schedule\obj\Debug\net6.0\Movin.Schedule.AssemblyInfoInputs.cache
+C:\Programing\CSharp ASP NET\Movin\Movin.Schedule\obj\Debug\net6.0\Movin.Schedule.AssemblyInfo.cs
+C:\Programing\CSharp ASP NET\Movin\Movin.Schedule\obj\Debug\net6.0\Movin.Schedule.csproj.CoreCompileInputs.cache
+C:\Programing\CSharp ASP NET\Movin\Movin.Schedule\obj\Debug\net6.0\Movin.Schedule.dll
+C:\Programing\CSharp ASP NET\Movin\Movin.Schedule\obj\Debug\net6.0\ref\Movin.Schedule.dll
+C:\Programing\CSharp ASP NET\Movin\Movin.Schedule\obj\Debug\net6.0\Movin.Schedule.pdb
