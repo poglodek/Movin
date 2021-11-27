@@ -1,0 +1,14 @@
+C:\Programing\CSharp ASP NET\Movin\Movin.Database\bin\Debug\net6.0\Movin.Database.deps.json
+C:\Programing\CSharp ASP NET\Movin\Movin.Database\bin\Debug\net6.0\Movin.Database.runtimeconfig.json
+C:\Programing\CSharp ASP NET\Movin\Movin.Database\bin\Debug\net6.0\Movin.Database.dll
+C:\Programing\CSharp ASP NET\Movin\Movin.Database\bin\Debug\net6.0\ref\Movin.Database.dll
+C:\Programing\CSharp ASP NET\Movin\Movin.Database\bin\Debug\net6.0\Movin.Database.pdb
+C:\Programing\CSharp ASP NET\Movin\Movin.Database\obj\Debug\net6.0\Movin.Database.csproj.AssemblyReference.cache
+C:\Programing\CSharp ASP NET\Movin\Movin.Database\obj\Debug\net6.0\Movin.Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programing\CSharp ASP NET\Movin\Movin.Database\obj\Debug\net6.0\Movin.Database.AssemblyInfoInputs.cache
+C:\Programing\CSharp ASP NET\Movin\Movin.Database\obj\Debug\net6.0\Movin.Database.AssemblyInfo.cs
+C:\Programing\CSharp ASP NET\Movin\Movin.Database\obj\Debug\net6.0\Movin.Database.csproj.CoreCompileInputs.cache
+C:\Programing\CSharp ASP NET\Movin\Movin.Database\obj\Debug\net6.0\Movin.Database.dll
+C:\Programing\CSharp ASP NET\Movin\Movin.Database\obj\Debug\net6.0\ref\Movin.Database.dll
+C:\Programing\CSharp ASP NET\Movin\Movin.Database\obj\Debug\net6.0\Movin.Database.pdb
+C:\Programing\CSharp ASP NET\Movin\Movin.Database\obj\Debug\net6.0\Movin.Database.genruntimeconfig.cache
