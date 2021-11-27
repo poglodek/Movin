@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -7,8 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Movin.Database\Movin.Database.csproj" />
-    <ProjectReference Include="..\Movin.Dto\Movin.Dto.csproj" />
+    <PackageReference Include="Quartz" Version="3.3.3" />
   </ItemGroup>
 
 </Project>
