@@ -15,7 +15,7 @@ namespace Movin.TestingMethod
 {
     public class PingTest
     {
-        private TestDto _TestDto;
+        private TestDto _TestDto = null!;
 
         public PingTest()
         {
@@ -25,6 +25,11 @@ namespace Movin.TestingMethod
         {
             if (testDto.TestType != TestType.PING)
                 throw new WrongTypeTestException($"Cannot parse this test to Ping Test");
+            foreach (var host in testDto.Hosts)
+            {
+                if (!TestHelper.TryParseToIPAddress(host.Ip))
+                    throw new InCorrectIpAddress($"IP: {host.Ip} is in correct");
+            }
             _TestDto = testDto;
         }
 
@@ -32,13 +37,14 @@ namespace Movin.TestingMethod
         {
             if (!_TestDto.TestEnable || _TestDto is null)
                 return;
+
             var hosts = _TestDto.Hosts;
             
             foreach (var host in hosts)
             {
                 Task.Run((() =>
                 {
-                    var result = Test(host).Result;
+                    var result = Test(host);
                     if (_TestDto.SaveTestToDatabase)
                         //TODO:Save to database
                         Console.WriteLine("SAVE TO DATABASE");
@@ -48,23 +54,20 @@ namespace Movin.TestingMethod
                 }));
             }
         }
-        public async Task<TestingMethodResult> Test(HostDto hostDto)
+        public TestingMethodResult Test(HostDto hostDto)
         {
             if (!TestHelper.TryParseToIPAddress(hostDto.Ip))
                 return TestingMethodResult.INVALID_IP_ADDRESS;
 
-            PingReply reply = null;
             Ping pingTest = new Ping();
 
             // Create a buffer of 32 bytes of data to be transmitted.
             string data = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
             byte[] buffer = Encoding.ASCII.GetBytes(data);
 
-            reply = pingTest.Send(IPAddress.Parse(hostDto.Ip), 30, buffer);
+            PingReply reply = pingTest.Send(IPAddress.Parse(hostDto.Ip), 30, buffer);
 
-            if (reply is null)
-                return TestingMethodResult.FAIL;
-            else if (reply.Status == IPStatus.Success)
+            if (reply.Status == IPStatus.Success)
                 return TestingMethodResult.SUCCESS;
             else if (reply.Status == IPStatus.DestinationHostUnreachable)
                 return TestingMethodResult.HOST_UNREACHABLE;
