@@ -621,6 +621,16 @@
         "runtime": {
           "bin/placeholder/Movin.Dto.dll": {}
         }
+      },
+      "Movin.Exception/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Movin.Exception.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Movin.Exception.dll": {}
+        }
       }
     }
   },
@@ -1795,12 +1805,18 @@
       "type": "project",
       "path": "../Movin.Dto/Movin.Dto.csproj",
       "msbuildProject": "../Movin.Dto/Movin.Dto.csproj"
+    },
+    "Movin.Exception/1.0.0": {
+      "type": "project",
+      "path": "../Movin.Exception/Movin.Exception.csproj",
+      "msbuildProject": "../Movin.Exception/Movin.Exception.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Movin.Database >= 1.0.0",
-      "Movin.Dto >= 1.0.0"
+      "Movin.Dto >= 1.0.0",
+      "Movin.Exception >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1840,6 +1856,9 @@
             },
             "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Dto\\Movin.Dto.csproj": {
               "projectPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Dto\\Movin.Dto.csproj"
+            },
+            "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Exception\\Movin.Exception.csproj": {
+              "projectPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Exception\\Movin.Exception.csproj"
             }
           }
         }
