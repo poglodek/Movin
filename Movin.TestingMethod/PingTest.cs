@@ -17,6 +17,10 @@ namespace Movin.TestingMethod
     {
         private TestDto _TestDto;
 
+        public PingTest()
+        {
+            //TODO: Adding services to save 
+        }
         public void SetTest(TestDto testDto)
         {
             if (testDto.TestType != TestType.PING)
@@ -32,13 +36,16 @@ namespace Movin.TestingMethod
             
             foreach (var host in hosts)
             {
-                var result = Test(host).Result;
-                if(_TestDto.SaveTestToDatabase)
-                    //TODO:Save to database
-                    Console.WriteLine("SAVE TO DATABASE");
-                if (_TestDto.LogTestToFile)
-                    //TODO:Save to database
-                    Console.WriteLine("LOG TO FILE");
+                Task.Run((() =>
+                {
+                    var result = Test(host).Result;
+                    if (_TestDto.SaveTestToDatabase)
+                        //TODO:Save to database
+                        Console.WriteLine("SAVE TO DATABASE");
+                    if (_TestDto.LogTestToFile)
+                        //TODO:Save to database
+                        Console.WriteLine("LOG TO FILE");
+                }));
             }
         }
         public async Task<TestingMethodResult> Test(HostDto hostDto)
@@ -47,15 +54,13 @@ namespace Movin.TestingMethod
                 return TestingMethodResult.INVALID_IP_ADDRESS;
 
             PingReply reply = null;
+            Ping pingTest = new Ping();
 
-            Task.Factory.StartNew((() =>
-              {
-                  Ping pingTest = new Ping();
-                // Create a buffer of 32 bytes of data to be transmitted.
-                string data = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
-                  byte[] buffer = Encoding.ASCII.GetBytes(data);
-                  reply = pingTest.Send(IPAddress.Parse(hostDto.Ip), 30, buffer);
-              })).Wait();
+            // Create a buffer of 32 bytes of data to be transmitted.
+            string data = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+            byte[] buffer = Encoding.ASCII.GetBytes(data);
+
+            reply = pingTest.Send(IPAddress.Parse(hostDto.Ip), 30, buffer);
 
             if (reply is null)
                 return TestingMethodResult.FAIL;

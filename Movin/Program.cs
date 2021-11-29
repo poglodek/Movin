@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Movin;
 using Movin.Database;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,9 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<MovinDbContext>(x => x.UseSqlServer("Server=.;Database=Movin;Trusted_Connection=True;"));
-//for docker
-//builder.Services.AddDbContext<MovinDbContext>(x => x.UseSqlServer("Server=sql-server;Database=HostelSystem;User=sa;Password=P@s5Word&;"));
+Services.AddServices(builder.Services);
 
 var app = builder.Build();
 
