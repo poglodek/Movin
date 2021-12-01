@@ -674,7 +674,8 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Movin.Database": "1.0.0",
-          "Movin.Dto": "1.0.0"
+          "Movin.Dto": "1.0.0",
+          "Movin.Exception": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Movin.Services.dll": {}

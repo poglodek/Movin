@@ -691,12 +691,23 @@
           "bin/placeholder/Movin.Dto.dll": {}
         }
       },
+      "Movin.Exception/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Movin.Exception.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Movin.Exception.dll": {}
+        }
+      },
       "Movin.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Movin.Database": "1.0.0",
-          "Movin.Dto": "1.0.0"
+          "Movin.Dto": "1.0.0",
+          "Movin.Exception": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Movin.Services.dll": {}
@@ -2072,6 +2083,11 @@
       "type": "project",
       "path": "../Movin.Dto/Movin.Dto.csproj",
       "msbuildProject": "../Movin.Dto/Movin.Dto.csproj"
+    },
+    "Movin.Exception/1.0.0": {
+      "type": "project",
+      "path": "../Movin.Exception/Movin.Exception.csproj",
+      "msbuildProject": "../Movin.Exception/Movin.Exception.csproj"
     },
     "Movin.Services/1.0.0": {
       "type": "project",
