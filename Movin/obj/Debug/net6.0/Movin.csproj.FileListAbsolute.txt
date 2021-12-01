@@ -64,3 +64,5 @@ C:\Programing\CSharp ASP NET\Movin\Movin\obj\Debug\net6.0\Movin.dll
 C:\Programing\CSharp ASP NET\Movin\Movin\obj\Debug\net6.0\ref\Movin.dll
 C:\Programing\CSharp ASP NET\Movin\Movin\obj\Debug\net6.0\Movin.pdb
 C:\Programing\CSharp ASP NET\Movin\Movin\obj\Debug\net6.0\Movin.genruntimeconfig.cache
+C:\Programing\CSharp ASP NET\Movin\Movin\bin\Debug\net6.0\AutoMapper.dll
+C:\Programing\CSharp ASP NET\Movin\Movin\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

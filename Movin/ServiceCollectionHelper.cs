@@ -16,6 +16,8 @@ namespace Movin
             serviceCollection.AddScoped<ITestResultServices,ITestResultServices>();
             serviceCollection.AddScoped<ITestServices,ITestServices>();
             serviceCollection.AddScoped<IHostServices,IHostServices>();
+            serviceCollection.AddAutoMapper(typeof(Movin.Dto.MovinMapper).Assembly);
+
         }
     }
 
