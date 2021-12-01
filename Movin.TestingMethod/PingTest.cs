@@ -33,9 +33,9 @@ namespace Movin.TestingMethod
             _TestDto = testDto;
         }
 
-        private void PrepareHosts()
+        public void PrepareHosts()
         {
-            if (!_TestDto.TestEnable || _TestDto is null)
+            if (!_TestDto.TestEnable || _TestDto is null || _TestDto.Hosts.Count == 0)
                 return;
 
             var hosts = _TestDto.Hosts;
@@ -64,16 +64,20 @@ namespace Movin.TestingMethod
             // Create a buffer of 32 bytes of data to be transmitted.
             string data = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
             byte[] buffer = Encoding.ASCII.GetBytes(data);
-
-            PingReply reply = pingTest.Send(IPAddress.Parse(hostDto.Ip), 30, buffer);
-
-            if (reply.Status == IPStatus.Success)
-                return TestingMethodResult.SUCCESS;
-            else if (reply.Status == IPStatus.DestinationHostUnreachable)
+            try
+            {
+                PingReply reply = pingTest.Send(IPAddress.Parse(hostDto.Ip), 30, buffer);
+                if (reply.Status == IPStatus.Success)
+                    return TestingMethodResult.SUCCESS;
+                else if (reply.Status == IPStatus.DestinationHostUnreachable)
+                    return TestingMethodResult.HOST_UNREACHABLE;
+                else
+                    return TestingMethodResult.FAIL;
+            }
+            catch
+            {
                 return TestingMethodResult.HOST_UNREACHABLE;
-            else
-                return TestingMethodResult.FAIL;
-
+            }
 
         }
       

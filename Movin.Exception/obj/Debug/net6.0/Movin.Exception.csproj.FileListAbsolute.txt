@@ -1,0 +1,12 @@
+C:\Programing\CSharp ASP NET\Movin\Movin.Exception\bin\Debug\net6.0\Movin.Exception.deps.json
+C:\Programing\CSharp ASP NET\Movin\Movin.Exception\bin\Debug\net6.0\Movin.Exception.dll
+C:\Programing\CSharp ASP NET\Movin\Movin.Exception\bin\Debug\net6.0\ref\Movin.Exception.dll
+C:\Programing\CSharp ASP NET\Movin\Movin.Exception\bin\Debug\net6.0\Movin.Exception.pdb
+C:\Programing\CSharp ASP NET\Movin\Movin.Exception\obj\Debug\net6.0\Movin.Exception.csproj.AssemblyReference.cache
+C:\Programing\CSharp ASP NET\Movin\Movin.Exception\obj\Debug\net6.0\Movin.Exception.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programing\CSharp ASP NET\Movin\Movin.Exception\obj\Debug\net6.0\Movin.Exception.AssemblyInfoInputs.cache
+C:\Programing\CSharp ASP NET\Movin\Movin.Exception\obj\Debug\net6.0\Movin.Exception.AssemblyInfo.cs
+C:\Programing\CSharp ASP NET\Movin\Movin.Exception\obj\Debug\net6.0\Movin.Exception.csproj.CoreCompileInputs.cache
+C:\Programing\CSharp ASP NET\Movin\Movin.Exception\obj\Debug\net6.0\Movin.Exception.dll
+C:\Programing\CSharp ASP NET\Movin\Movin.Exception\obj\Debug\net6.0\ref\Movin.Exception.dll
+C:\Programing\CSharp ASP NET\Movin\Movin.Exception\obj\Debug\net6.0\Movin.Exception.pdb
