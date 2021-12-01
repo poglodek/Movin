@@ -17,3 +17,5 @@ C:\Programing\CSharp ASP NET\Movin\Movin.TestingMethod\obj\Debug\net6.0\Movin.Te
 C:\Programing\CSharp ASP NET\Movin\Movin.TestingMethod\obj\Debug\net6.0\Movin.TestingMethod.dll
 C:\Programing\CSharp ASP NET\Movin\Movin.TestingMethod\obj\Debug\net6.0\ref\Movin.TestingMethod.dll
 C:\Programing\CSharp ASP NET\Movin\Movin.TestingMethod\obj\Debug\net6.0\Movin.TestingMethod.pdb
+C:\Programing\CSharp ASP NET\Movin\Movin.TestingMethod\bin\Debug\net6.0\Movin.Services.dll
+C:\Programing\CSharp ASP NET\Movin\Movin.TestingMethod\bin\Debug\net6.0\Movin.Services.pdb

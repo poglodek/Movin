@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Movin.Database;
 
@@ -11,9 +12,10 @@ using Movin.Database;
 namespace Movin.Database.Migrations
 {
     [DbContext(typeof(MovinDbContext))]
-    partial class MovinDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211201200403_TestResultChange")]
+    partial class TestResultChange
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

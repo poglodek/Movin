@@ -148,3 +148,5 @@ C:\Programing\CSharp ASP NET\Movin\Movin.Test\obj\Debug\net6.0\Movin.Test.dll
 C:\Programing\CSharp ASP NET\Movin\Movin.Test\obj\Debug\net6.0\ref\Movin.Test.dll
 C:\Programing\CSharp ASP NET\Movin\Movin.Test\obj\Debug\net6.0\Movin.Test.pdb
 C:\Programing\CSharp ASP NET\Movin\Movin.Test\obj\Debug\net6.0\Movin.Test.genruntimeconfig.cache
+C:\Programing\CSharp ASP NET\Movin\Movin.Test\bin\Debug\net6.0\Movin.Services.dll
+C:\Programing\CSharp ASP NET\Movin\Movin.Test\bin\Debug\net6.0\Movin.Services.pdb

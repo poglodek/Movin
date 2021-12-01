@@ -10,7 +10,8 @@
         "dependencies": {
           "Movin.Database": "1.0.0",
           "Movin.Dto": "1.0.0",
-          "Movin.Exception": "1.0.0"
+          "Movin.Exception": "1.0.0",
+          "Movin.Services": "1.0.0"
         },
         "runtime": {
           "Movin.TestingMethod.dll": {}
@@ -479,6 +480,15 @@
         "runtime": {
           "Movin.Exception.dll": {}
         }
+      },
+      "Movin.Services/1.0.0": {
+        "dependencies": {
+          "Movin.Database": "1.0.0",
+          "Movin.Dto": "1.0.0"
+        },
+        "runtime": {
+          "Movin.Services.dll": {}
+        }
       }
     }
   },
@@ -779,6 +789,11 @@
       "sha512": ""
     },
     "Movin.Exception/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Movin.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Movin.Database;
+using Movin.Database.Entity;
 using Movin.Services.IServices;
 
 namespace Movin.Services.Services
@@ -16,5 +17,7 @@ namespace Movin.Services.Services
         {
             _dbContext = dbContext;
         }
+
+        public Host GetHostById(int id) => _dbContext.Hosts.FirstOrDefault(x => x.Id == id);
     }
 }
