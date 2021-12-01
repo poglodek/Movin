@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Movin;
 using Movin.Database;
+using Movin.Services.IServices;
+using Movin.Services.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,7 +10,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 ServiceCollectionHelper.AddServices(builder.Services);
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -35,7 +35,7 @@ namespace Movin.Services.Services
             var entity = _mapper.Map<TestResult>(dto);
             var host = _hostServices.GetHostById(dto.HostId);
             var test = _testServices.GetHostById(dto.TestId);
-            entity.Host =  host ?? throw  new NotFoundException("Host not found");
+            entity.Host =  host ?? throw new NotFoundException("Host not found");
             entity.Test = test ?? throw new NotFoundException("Test not found");
             _dbContext.Results.Add(entity);
             _dbContext.SaveChanges();

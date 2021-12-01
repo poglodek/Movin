@@ -15,3 +15,5 @@ C:\Programing\CSharp ASP NET\Movin\Movin.Services\obj\Debug\net6.0\Movin.Service
 C:\Programing\CSharp ASP NET\Movin\Movin.Services\obj\Debug\net6.0\Movin.Services.dll
 C:\Programing\CSharp ASP NET\Movin\Movin.Services\obj\Debug\net6.0\ref\Movin.Services.dll
 C:\Programing\CSharp ASP NET\Movin\Movin.Services\obj\Debug\net6.0\Movin.Services.pdb
+C:\Programing\CSharp ASP NET\Movin\Movin.Services\bin\Debug\net6.0\Movin.Exception.dll
+C:\Programing\CSharp ASP NET\Movin\Movin.Services\bin\Debug\net6.0\Movin.Exception.pdb
