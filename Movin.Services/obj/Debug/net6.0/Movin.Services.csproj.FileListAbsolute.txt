@@ -2,11 +2,16 @@ C:\Programing\CSharp ASP NET\Movin\Movin.Services\bin\Debug\net6.0\Movin.Service
 C:\Programing\CSharp ASP NET\Movin\Movin.Services\bin\Debug\net6.0\Movin.Services.dll
 C:\Programing\CSharp ASP NET\Movin\Movin.Services\bin\Debug\net6.0\ref\Movin.Services.dll
 C:\Programing\CSharp ASP NET\Movin\Movin.Services\bin\Debug\net6.0\Movin.Services.pdb
+C:\Programing\CSharp ASP NET\Movin\Movin.Services\bin\Debug\net6.0\Movin.Database.dll
+C:\Programing\CSharp ASP NET\Movin\Movin.Services\bin\Debug\net6.0\Movin.Dto.dll
+C:\Programing\CSharp ASP NET\Movin\Movin.Services\bin\Debug\net6.0\Movin.Database.pdb
+C:\Programing\CSharp ASP NET\Movin\Movin.Services\bin\Debug\net6.0\Movin.Dto.pdb
 C:\Programing\CSharp ASP NET\Movin\Movin.Services\obj\Debug\net6.0\Movin.Services.csproj.AssemblyReference.cache
 C:\Programing\CSharp ASP NET\Movin\Movin.Services\obj\Debug\net6.0\Movin.Services.GeneratedMSBuildEditorConfig.editorconfig
 C:\Programing\CSharp ASP NET\Movin\Movin.Services\obj\Debug\net6.0\Movin.Services.AssemblyInfoInputs.cache
 C:\Programing\CSharp ASP NET\Movin\Movin.Services\obj\Debug\net6.0\Movin.Services.AssemblyInfo.cs
 C:\Programing\CSharp ASP NET\Movin\Movin.Services\obj\Debug\net6.0\Movin.Services.csproj.CoreCompileInputs.cache
+C:\Programing\CSharp ASP NET\Movin\Movin.Services\obj\Debug\net6.0\Movin.Services.csproj.CopyComplete
 C:\Programing\CSharp ASP NET\Movin\Movin.Services\obj\Debug\net6.0\Movin.Services.dll
 C:\Programing\CSharp ASP NET\Movin\Movin.Services\obj\Debug\net6.0\ref\Movin.Services.dll
 C:\Programing\CSharp ASP NET\Movin\Movin.Services\obj\Debug\net6.0\Movin.Services.pdb

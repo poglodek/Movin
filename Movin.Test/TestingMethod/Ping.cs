@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Moq;
+using Movin.Database.Enum;
 using Movin.Dto.Host;
 using Movin.Dto.Test;
 using Movin.TestingMethod;

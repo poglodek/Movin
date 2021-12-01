@@ -2,14 +2,14 @@ C:\Programing\CSharp ASP NET\Movin\Movin.Dto\bin\Debug\net6.0\Movin.Dto.deps.jso
 C:\Programing\CSharp ASP NET\Movin\Movin.Dto\bin\Debug\net6.0\Movin.Dto.dll
 C:\Programing\CSharp ASP NET\Movin\Movin.Dto\bin\Debug\net6.0\ref\Movin.Dto.dll
 C:\Programing\CSharp ASP NET\Movin\Movin.Dto\bin\Debug\net6.0\Movin.Dto.pdb
+C:\Programing\CSharp ASP NET\Movin\Movin.Dto\bin\Debug\net6.0\Movin.Database.dll
+C:\Programing\CSharp ASP NET\Movin\Movin.Dto\bin\Debug\net6.0\Movin.Database.pdb
 C:\Programing\CSharp ASP NET\Movin\Movin.Dto\obj\Debug\net6.0\Movin.Dto.csproj.AssemblyReference.cache
 C:\Programing\CSharp ASP NET\Movin\Movin.Dto\obj\Debug\net6.0\Movin.Dto.GeneratedMSBuildEditorConfig.editorconfig
 C:\Programing\CSharp ASP NET\Movin\Movin.Dto\obj\Debug\net6.0\Movin.Dto.AssemblyInfoInputs.cache
 C:\Programing\CSharp ASP NET\Movin\Movin.Dto\obj\Debug\net6.0\Movin.Dto.AssemblyInfo.cs
 C:\Programing\CSharp ASP NET\Movin\Movin.Dto\obj\Debug\net6.0\Movin.Dto.csproj.CoreCompileInputs.cache
+C:\Programing\CSharp ASP NET\Movin\Movin.Dto\obj\Debug\net6.0\Movin.Dto.csproj.CopyComplete
 C:\Programing\CSharp ASP NET\Movin\Movin.Dto\obj\Debug\net6.0\Movin.Dto.dll
 C:\Programing\CSharp ASP NET\Movin\Movin.Dto\obj\Debug\net6.0\ref\Movin.Dto.dll
 C:\Programing\CSharp ASP NET\Movin\Movin.Dto\obj\Debug\net6.0\Movin.Dto.pdb
-C:\Programing\CSharp ASP NET\Movin\Movin.Dto\bin\Debug\net6.0\Movin.Database.dll
-C:\Programing\CSharp ASP NET\Movin\Movin.Dto\bin\Debug\net6.0\Movin.Database.pdb
-C:\Programing\CSharp ASP NET\Movin\Movin.Dto\obj\Debug\net6.0\Movin.Dto.csproj.CopyComplete

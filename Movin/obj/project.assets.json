@@ -640,6 +640,33 @@
         "runtime": {
           "bin/placeholder/Movin.Database.dll": {}
         }
+      },
+      "Movin.Dto/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Movin.Database": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Movin.Dto.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Movin.Dto.dll": {}
+        }
+      },
+      "Movin.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Movin.Database": "1.0.0",
+          "Movin.Dto": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Movin.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Movin.Services.dll": {}
+        }
       }
     }
   },
@@ -1919,6 +1946,16 @@
       "type": "project",
       "path": "../Movin.Database/Movin.Database.csproj",
       "msbuildProject": "../Movin.Database/Movin.Database.csproj"
+    },
+    "Movin.Dto/1.0.0": {
+      "type": "project",
+      "path": "../Movin.Dto/Movin.Dto.csproj",
+      "msbuildProject": "../Movin.Dto/Movin.Dto.csproj"
+    },
+    "Movin.Services/1.0.0": {
+      "type": "project",
+      "path": "../Movin.Services/Movin.Services.csproj",
+      "msbuildProject": "../Movin.Services/Movin.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1927,7 +1964,8 @@
       "Microsoft.EntityFrameworkCore.Design >= 6.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.14.0",
-      "Movin.Database >= 1.0.0"
+      "Movin.Database >= 1.0.0",
+      "Movin.Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1964,6 +2002,9 @@
           "projectReferences": {
             "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Database\\Movin.Database.csproj": {
               "projectPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Database\\Movin.Database.csproj"
+            },
+            "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Services\\Movin.Services.csproj": {
+              "projectPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Services\\Movin.Services.csproj"
             }
           }
         }

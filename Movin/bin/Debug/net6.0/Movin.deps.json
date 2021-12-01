@@ -12,7 +12,8 @@
           "Microsoft.EntityFrameworkCore.Design": "6.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.0",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.14.0",
-          "Movin.Database": "1.0.0"
+          "Movin.Database": "1.0.0",
+          "Movin.Services": "1.0.0"
         },
         "runtime": {
           "Movin.dll": {}
@@ -433,6 +434,23 @@
         "runtime": {
           "Movin.Database.dll": {}
         }
+      },
+      "Movin.Dto/1.0.0": {
+        "dependencies": {
+          "Movin.Database": "1.0.0"
+        },
+        "runtime": {
+          "Movin.Dto.dll": {}
+        }
+      },
+      "Movin.Services/1.0.0": {
+        "dependencies": {
+          "Movin.Database": "1.0.0",
+          "Movin.Dto": "1.0.0"
+        },
+        "runtime": {
+          "Movin.Services.dll": {}
+        }
       }
     }
   },
@@ -744,6 +762,16 @@
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
     "Movin.Database/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Movin.Dto/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Movin.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

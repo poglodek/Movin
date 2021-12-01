@@ -10,6 +10,7 @@
     <ProjectReference Include="..\Movin.Database\Movin.Database.csproj" />
     <ProjectReference Include="..\Movin.Dto\Movin.Dto.csproj" />
     <ProjectReference Include="..\Movin.Exception\Movin.Exception.csproj" />
+    <ProjectReference Include="..\Movin.Services\Movin.Services.csproj" />
   </ItemGroup>
 
 </Project>

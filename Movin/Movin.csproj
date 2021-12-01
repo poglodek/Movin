@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Movin.Database\Movin.Database.csproj" />
+    <ProjectReference Include="..\Movin.Services\Movin.Services.csproj" />
   </ItemGroup>
 
 </Project>
