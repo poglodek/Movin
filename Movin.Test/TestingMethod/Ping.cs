@@ -1,24 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Moq;
+﻿using Moq;
 using Movin.Database.Enum;
 using Movin.Dto.Host;
 using Movin.Dto.Test;
 using Movin.TestingMethod;
+using System.Collections.Generic;
+using System.Linq;
 using Xunit;
 
 namespace Movin.Test.TestingMethod
 {
-    
+
     public class Ping
     {
         [Fact]
         public void Test_ForValidHost_Return_SUCCESS()
         {
-            var pingTest = new Mock<PingTest>();
+            var pingTest = new Mock<PingTest>(null);
             var host =
                 new HostDto()
                 {
@@ -35,7 +32,7 @@ namespace Movin.Test.TestingMethod
         [Fact]
         public void Test_ForInValidHost_Return_Fail()
         {
-            var pingTest = new Mock<PingTest>();
+            var pingTest = new Mock<PingTest>(null);
             var host =
                 new HostDto()
                 {
@@ -52,7 +49,7 @@ namespace Movin.Test.TestingMethod
         [Fact]
         public void Test_ForUnreachableHost_Return_HOST_UNREACHABLE()
         {
-            var pingTest = new Mock<PingTest>();
+            var pingTest = new Mock<PingTest>(null);
             var host =
                 new HostDto()
                 {
@@ -69,7 +66,7 @@ namespace Movin.Test.TestingMethod
         [Fact]
         public void SetTest_ForValidTest_Return_SUCCESS()
         {
-            var pingTest = new Mock<PingTest>();
+            var pingTest = new Mock<PingTest>(null);
             var hosts = new List<HostDto>()
             {
                 new HostDto()
@@ -96,7 +93,7 @@ namespace Movin.Test.TestingMethod
         [Fact]
         public void PrepareHosts_ForValidTest_Return_SUCCESS()
         {
-            var pingTest = new Mock<PingTest>();
+            var pingTest = new Mock<PingTest>(null);
             var hosts = new List<HostDto>()
             {
                 new HostDto()

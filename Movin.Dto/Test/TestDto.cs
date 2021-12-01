@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Movin.Database.Entity;
-using Movin.Database.Enum;
+﻿using Movin.Database.Enum;
 using Movin.Dto.Host;
 using Movin.Dto.TestResult;
 

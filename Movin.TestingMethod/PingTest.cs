@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.NetworkInformation;
-using System.Text;
-using System.Threading.Tasks;
-using Movin.Database.Entity;
-using Movin.Database.Enum;
+﻿using Movin.Database.Enum;
 using Movin.Dto.Host;
 using Movin.Dto.Test;
 using Movin.Dto.TestResult;
 using Movin.Exception;
 using Movin.Services.IServices;
+using System.Net;
+using System.Net.NetworkInformation;
+using System.Text;
 
 namespace Movin.TestingMethod
 {
@@ -43,7 +38,7 @@ namespace Movin.TestingMethod
                 return;
 
             var hosts = _TestDto.Hosts;
-            
+
             foreach (var host in hosts)
             {
                 Task.Run((() =>
@@ -96,6 +91,6 @@ namespace Movin.TestingMethod
             _testResultServices.SaveTestResult(resultDto);
 
         }
-      
+
     }
 }

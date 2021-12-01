@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Movin.Database.Enum;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Movin.Database.Enum;
 
 namespace Movin.Database.Entity
 {

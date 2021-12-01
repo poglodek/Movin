@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Movin.Database.Entity;
 
 
@@ -13,11 +8,11 @@ namespace Movin.Database
     {
         public MovinDbContext()
         {
-            
+
         }
         public MovinDbContext(DbContextOptions<MovinDbContext> options) : base(options)
         {
-                
+
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Movin.Database.Enum;
+﻿using Movin.Database.Enum;
 
 namespace Movin.Dto.TestResult
 {

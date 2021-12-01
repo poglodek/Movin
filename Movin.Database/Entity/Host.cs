@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Movin.Database.Entity
 {
@@ -21,5 +16,5 @@ namespace Movin.Database.Entity
         public List<TestResult> TestResults { get; set; }
         public int Port { get; set; }
     }
-    
+
 }
