@@ -2,6 +2,7 @@
 
 namespace Movin.Controllers
 {
+    [Route("")]
     public class HomeController : Controller
     {
 

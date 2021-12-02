@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Programing\CSharp ASP NET\Movin\Movin
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Programing/CSharp ASP NET/Movin/Movin/Pages/Test/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Programing/CSharp ASP NET/Movin/Movin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
