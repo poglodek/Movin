@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Movin.Dto.Test;
 using Movin.Dto.TestResult;
 
 namespace Movin.Dto
@@ -11,7 +12,8 @@ namespace Movin.Dto
                 .ForMember(x => x.HostId, z => z.MapFrom(c => c.Host.Id))
                 .ForMember(x => x.TestId, z => z.MapFrom(c => c.Test.Id))
                 .ReverseMap();
-
+            CreateMap<Database.Entity.Test, TestListDto>()
+                .ReverseMap();
         }
     }
 }

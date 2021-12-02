@@ -1,0 +1,87 @@
+﻿@using Movin.Database.Enum
+@model System.Collections.Generic.IEnumerable<Movin.Dto.Test.TestListDto>
+
+@{
+    ViewBag.Title = "Test list";
+    Layout = "_Layout";
+}
+
+<h2>Test</h2>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>
+                Test Type
+            </th>
+            <th>
+                Test Name
+            </th>
+            <th>
+                Test Enable
+            </th>
+            <th>
+                Test Interval In Seconds
+            </th>
+            <th>
+                Save Test To Database
+            </th>
+            <th>
+                Log Test To File
+            </th>
+            <th>
+                Send Email When Test Failure
+            </th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody style="font-size:larger;">
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @switch (item.TestType)
+                    {
+                        case TestType.PING:
+                            @Html.DisplayText("Ping")
+                            break;
+                        case TestType.SSH:
+                            @Html.DisplayText("SSH")
+                            break;
+                        case TestType.FTP:
+                            @Html.DisplayText("FTP")
+                            break;
+                        case TestType.TELNET:
+                            @Html.DisplayText("Telnet")
+                            break;
+                        default:
+                            @Html.DisplayText("HTTP/HTTPS")
+                            break;
+                    }
+                                         
+                </td>
+                <td>
+                    @Html.DisplayFor(x=> item.TestName)
+                </td>
+                <td>
+                    @Html.DisplayFor(x=> item.TestIntervalInSeconds)
+                </td>
+                <td>
+                    @Html.DisplayFor(x=> item.SaveTestToDatabase)
+                </td>
+                <td>
+                    @Html.DisplayFor(x=> item.LogTestToFile)
+                </td>
+                <td>
+                    @Html.DisplayFor(x=> item.SendEmailWhenTestFailure)
+                </td>
+                <td>
+                    <a class="btn btn-outline-success" asp-controller="Test" asp-action="Edit" asp-route-id="@item.Id">Edit!</a>
+                    <a class="btn btn-success" asp-controller="Test" asp-action="Details" asp-route-id="@item.Id">Info!</a>
+                </td>
+            </tr>
+            
+        }
+        </tbody>
+    </table>
+</div>

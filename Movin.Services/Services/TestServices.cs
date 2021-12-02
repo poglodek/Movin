@@ -19,11 +19,11 @@ namespace Movin.Services.Services
             _mapper = mapper;
         }
         public Test GetHostById(int id) => _dbContext.Tests.FirstOrDefault(x => x.Id == id);
-        public IEnumerable<TestDto> GetListDto(string options)
+        public IEnumerable<TestListDto> GetListDto(string options)
         {
             if (options != "All" && options != "Disable" && options != "Enable")
                 throw new InCorrectQueryParseException("You can only choose All, Disable, Enable");
-            var list = _mapper.Map<List<TestDto>>(_dbContext.Tests);
+            var list = _mapper.Map<List<TestListDto>>(_dbContext.Tests.ToList());
             if (options == "All")
                 return list;
             return options == "Enable" ? list.Where(x => x.TestEnable) : list.Where(x => x.TestEnable == false);

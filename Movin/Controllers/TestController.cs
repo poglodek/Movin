@@ -18,9 +18,21 @@ namespace Movin.Controllers
             _testServices = testServices;
         }
 
-        public IActionResult Index([FromQuery]string options)
+        public IActionResult Index([FromQuery]string? options)
         {
+            if (options is null)
+                options = "All";
             return View(_testServices.GetListDto(options));
+        }
+        [HttpGet("{id}")]
+        public IActionResult Details([FromRoute]int id)
+        {
+            throw new NotImplementedException();
+        }
+        [HttpGet("{id}")]
+        public IActionResult Edit([FromRoute] int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }
