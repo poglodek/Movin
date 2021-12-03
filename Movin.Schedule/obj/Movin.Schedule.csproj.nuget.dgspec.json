@@ -4,14 +4,14 @@
     "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Schedule\\Movin.Schedule.csproj": {}
   },
   "projects": {
-    "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Schedule\\Movin.Schedule.csproj": {
+    "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Database\\Movin.Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Schedule\\Movin.Schedule.csproj",
-        "projectName": "Movin.Schedule",
-        "projectPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Schedule\\Movin.Schedule.csproj",
+        "projectUniqueName": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Database\\Movin.Database.csproj",
+        "projectName": "Movin.Database",
+        "projectPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Database\\Movin.Database.csproj",
         "packagesPath": "C:\\Users\\Pablo\\.nuget\\packages\\",
-        "outputPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Schedule\\obj\\",
+        "outputPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Database\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,9 +44,449 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Dto\\Movin.Dto.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Dto\\Movin.Dto.csproj",
+        "projectName": "Movin.Dto",
+        "projectPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Dto\\Movin.Dto.csproj",
+        "packagesPath": "C:\\Users\\Pablo\\.nuget\\packages\\",
+        "outputPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Dto\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Pablo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Database\\Movin.Database.csproj": {
+                "projectPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Database\\Movin.Database.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Exception\\Movin.Exception.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Exception\\Movin.Exception.csproj",
+        "projectName": "Movin.Exception",
+        "projectPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Exception\\Movin.Exception.csproj",
+        "packagesPath": "C:\\Users\\Pablo\\.nuget\\packages\\",
+        "outputPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Exception\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Pablo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Schedule\\Movin.Schedule.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Schedule\\Movin.Schedule.csproj",
+        "projectName": "Movin.Schedule",
+        "projectPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Schedule\\Movin.Schedule.csproj",
+        "packagesPath": "C:\\Users\\Pablo\\.nuget\\packages\\",
+        "outputPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Schedule\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Pablo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Services\\Movin.Services.csproj": {
+                "projectPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Services\\Movin.Services.csproj"
+              },
+              "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Test\\Movin.Test.csproj": {
+                "projectPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Test\\Movin.Test.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
             "Quartz": {
               "target": "Package",
               "version": "[3.3.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Services\\Movin.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Services\\Movin.Services.csproj",
+        "projectName": "Movin.Services",
+        "projectPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Services\\Movin.Services.csproj",
+        "packagesPath": "C:\\Users\\Pablo\\.nuget\\packages\\",
+        "outputPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Pablo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Database\\Movin.Database.csproj": {
+                "projectPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Database\\Movin.Database.csproj"
+              },
+              "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Dto\\Movin.Dto.csproj": {
+                "projectPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Dto\\Movin.Dto.csproj"
+              },
+              "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Exception\\Movin.Exception.csproj": {
+                "projectPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Exception\\Movin.Exception.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.TestingMethod\\Movin.TestingMethod.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.TestingMethod\\Movin.TestingMethod.csproj",
+        "projectName": "Movin.TestingMethod",
+        "projectPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.TestingMethod\\Movin.TestingMethod.csproj",
+        "packagesPath": "C:\\Users\\Pablo\\.nuget\\packages\\",
+        "outputPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.TestingMethod\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Pablo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Database\\Movin.Database.csproj": {
+                "projectPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Database\\Movin.Database.csproj"
+              },
+              "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Dto\\Movin.Dto.csproj": {
+                "projectPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Dto\\Movin.Dto.csproj"
+              },
+              "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Exception\\Movin.Exception.csproj": {
+                "projectPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Exception\\Movin.Exception.csproj"
+              },
+              "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Services\\Movin.Services.csproj": {
+                "projectPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Services\\Movin.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Test\\Movin.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Test\\Movin.Test.csproj",
+        "projectName": "Movin.Test",
+        "projectPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Test\\Movin.Test.csproj",
+        "packagesPath": "C:\\Users\\Pablo\\.nuget\\packages\\",
+        "outputPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Pablo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.TestingMethod\\Movin.TestingMethod.csproj": {
+                "projectPath": "C:\\Programing\\CSharp ASP NET\\Movin\\Movin.TestingMethod\\Movin.TestingMethod.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.11.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
             }
           },
           "imports": [

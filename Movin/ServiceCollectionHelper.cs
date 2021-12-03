@@ -17,7 +17,7 @@ namespace Movin
             serviceCollection.AddScoped<ITestResultServices, TestResultServices>();
             serviceCollection.AddScoped<ITestServices, TestServices>();
             serviceCollection.AddScoped<IHostServices, HostServices>();
-
+            serviceCollection.AddScoped<Schedule.Schedule>();
 
         }
     }

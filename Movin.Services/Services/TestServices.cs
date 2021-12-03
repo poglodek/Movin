@@ -28,5 +28,7 @@ namespace Movin.Services.Services
                 return list;
             return options == "Enable" ? list.Where(x => x.TestEnable) : list.Where(x => x.TestEnable == false);
         }
+
+        public IEnumerable<Test> GetActiveTest() => _dbContext.Tests.Where(x => x.TestEnable);
     }
 }

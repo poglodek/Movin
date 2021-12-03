@@ -10,4 +10,9 @@
     <PackageReference Include="Quartz" Version="3.3.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Movin.Services\Movin.Services.csproj" />
+    <ProjectReference Include="..\Movin.Test\Movin.Test.csproj" />
+  </ItemGroup>
+
 </Project>

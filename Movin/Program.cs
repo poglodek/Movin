@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Movin;
 using Movin.Database;
+using Movin.Schedule;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +25,7 @@ app.UseStaticFiles();
 app.UseRouting();
 var scope = app.Services.CreateScope();
 scope.ServiceProvider.GetService<MovinDbContext>().Database.Migrate();
+scope.ServiceProvider.GetService<Schedule>().StartService();
 app.UseAuthorization();
 
 app.MapControllerRoute(

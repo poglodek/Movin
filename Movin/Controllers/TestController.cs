@@ -17,7 +17,7 @@ namespace Movin.Controllers
         {
             _testServices = testServices;
         }
-
+        [HttpGet]
         public IActionResult Index([FromQuery]string? options)
         {
             if (options is null)
