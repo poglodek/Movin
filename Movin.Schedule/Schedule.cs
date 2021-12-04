@@ -53,12 +53,12 @@ namespace Movin.Schedule
 
         private void CreateSchedule(Database.Entity.Test test)
         {
+            var ping = new PingTest(_testResultServices);
+            ping.SetTest(_mapper.Map<TestDto>(test));
             TimerCallback callback = (x) =>
             {
-
                 //TODO:Adding changer for test ping, ssh
-                var ping = new PingTest(_testResultServices);
-                ping.SetTest(_mapper.Map<TestDto>(test));
+                ping.PrepareHosts();
             };
             int intervalInMS = test.TestIntervalInSeconds * 1000 * 60;  // test time 
             var timer = new Timer(callback, state: null, dueTime: intervalInMS, period: intervalInMS);

@@ -8,7 +8,7 @@ using Movin.Services.IServices;
 
 namespace Movin.Controllers
 {
-    [Route("Test")]
+    [Route("StartTest")]
     public class TestController : Controller
     {
         private readonly ITestServices _testServices;

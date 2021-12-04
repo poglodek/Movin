@@ -26,7 +26,7 @@ namespace Movin.Test.TestingMethod
                     Port = 0
                 };
 
-            var result = pingTest.Object.Test(host);
+            var result = pingTest.Object.StartTest(host);
             Assert.Equal(TestingMethodResult.SUCCESS, result);
         }
         [Fact]
@@ -43,7 +43,7 @@ namespace Movin.Test.TestingMethod
                     Port = 0
                 };
 
-            var result = pingTest.Object.Test(host);
+            var result = pingTest.Object.StartTest(host);
             Assert.Equal(TestingMethodResult.FAIL, result);
         }
         [Fact]
@@ -60,7 +60,7 @@ namespace Movin.Test.TestingMethod
                     Port = 0
                 };
 
-            var result = pingTest.Object.Test(host);
+            var result = pingTest.Object.StartTest(host);
             Assert.Equal(TestingMethodResult.HOST_UNREACHABLE, result);
         }
         [Fact]
@@ -87,7 +87,7 @@ namespace Movin.Test.TestingMethod
             };
 
             pingTest.Object.SetTest(test);
-            var result = pingTest.Object.Test(hosts.First());
+            var result = pingTest.Object.StartTest(hosts.First());
             Assert.Equal(TestingMethodResult.SUCCESS, result);
         }
         [Fact]
