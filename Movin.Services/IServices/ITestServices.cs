@@ -8,4 +8,5 @@ public interface ITestServices
     Test GetHostById(int id);
     IEnumerable<TestListDto> GetListDto(string options);
     IEnumerable<Test> GetActiveTest();
+    bool AddTest(TestDto dto);
 }

@@ -30,5 +30,14 @@ namespace Movin.Services.Services
         }
 
         public IEnumerable<Test> GetActiveTest() => _dbContext.Tests.Where(x => x.TestEnable);
+        public bool AddTest(TestDto dto)
+        {
+            Test test = _mapper.Map<Test>(dto);
+            if (_dbContext.Tests.Any(x => x.TestName == dto.TestName))
+                return false;
+            _dbContext.Tests.Add(test);
+            _dbContext.SaveChanges();
+            return true;
+        }
     }
 }

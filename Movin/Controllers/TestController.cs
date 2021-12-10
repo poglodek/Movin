@@ -38,8 +38,12 @@ namespace Movin.Controllers
         [HttpPost("add")]
         public IActionResult AddTest(TestDto dto)
         {
-            ViewBag.Hosts = _hostServices.GetHostDtoList();
+            if (_testServices.AddTest(dto))
+                return RedirectToAction("Index");
+            ViewBag.ErrorMessage = "Model not valid or Test Name Exist";
             return View();
+
+
         }
         [HttpGet("{id}")]
         public IActionResult Details([FromRoute]int id)

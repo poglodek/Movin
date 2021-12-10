@@ -14,6 +14,8 @@ namespace Movin.Dto
                 .ReverseMap();
             CreateMap<Database.Entity.Test, TestListDto>()
                 .ReverseMap();
+            CreateMap<Database.Entity.Test, TestDto>()
+                .ReverseMap();
         }
     }
 }

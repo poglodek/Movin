@@ -14,8 +14,8 @@ namespace Movin.Database.Entity
         public int TestIntervalInSeconds { get; set; }
         public bool SaveTestToDatabase { get; set; } = true;
         public bool LogTestToFile { get; set; } = false;
-        public string TestFileName { get; set; }
-        public string TestFilePath { get; set; }
+        public string? TestFileName { get; set; }
+        public string? TestFilePath { get; set; }
         public bool SendEmailWhenTestFailure { get; set; } = false;
         public List<Host> Hosts { get; set; }
         public List<TestResult> TestResults { get; set; }

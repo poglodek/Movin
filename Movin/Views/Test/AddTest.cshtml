@@ -13,6 +13,13 @@
 }
 
 <h2>Add Test</h2>
+@if (ViewBag.ErrorMessage is not null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrorMessage
+    </div>
+}
+<br />
 <form asp-controller="Test" asp-action="AddTest">
     <div class="form-group">
         <label>Test Name:</label>
@@ -50,4 +57,5 @@
         new SelectList(Enum.GetValues(typeof(TestType))), 
         "Select Test Type")
     <h3>When you want to add Host, please click edit Host on Test List.</h3>
+    <button type="submit" class="btn btn-primary">Add Test!</button>
 </form>
