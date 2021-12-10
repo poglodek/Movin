@@ -27,6 +27,7 @@ namespace Movin.Services.Services
 
         public void SaveTestResult(TestResultDto dto)
         {
+            Console.WriteLine("Saving test result");
             var entity = _mapper.Map<TestResult>(dto);
             var host = _hostServices.GetHostById(dto.HostId);
             var test = _testServices.GetHostById(dto.TestId);

@@ -18,8 +18,7 @@ namespace Movin.Schedule
         private readonly IMapper _mapper;
 
         public static bool ServiceStarted { get; set; }
-        public static Dictionary<string, Timer> Schedulers;
-
+        public static IEnumerable<Database.Entity.Test> Tests;
         public Schedule(ITestServices services, 
             ITestResultServices testResultServices, 
             IMapper mapper)
@@ -39,30 +38,34 @@ namespace Movin.Schedule
         public void StartService()
         {
             Console.WriteLine("Schedule starting...");
-            Schedulers = new Dictionary<string, Timer>();
-            Schedulers.Clear();
-            var tests = _services.GetActiveTest();
-            Console.WriteLine($"Schedulers tests: {tests.Count()}");
-            foreach (var test in tests)
-            {
-                CreateSchedule(test);
-            }
+
+            Tests = _services.GetActiveTest();
+            Console.WriteLine($"Schedulers tests: {Tests.Count()}");
+            CreateSchedule();
             Console.WriteLine("Schedule Started successfully!");
             ServiceStarted = true;
         }
 
-        private void CreateSchedule(Database.Entity.Test test)
+        private void CreateSchedule()
         {
-            var ping = new PingTest(_testResultServices);
-            ping.SetTest(_mapper.Map<TestDto>(test));
-            TimerCallback callback = (x) =>
+            foreach (var test in Tests)
             {
-                //TODO:Adding changer for test ping, ssh
-                ping.PrepareHosts();
-            };
-            int intervalInMS = test.TestIntervalInSeconds * 1000 * 60;  // test time 
-            var timer = new Timer(callback, state: null, dueTime: intervalInMS, period: intervalInMS);
-            Schedulers.Add(test.TestName,timer);
+                Task.Run( async () =>
+                {
+                    Console.WriteLine($"Create Task: {test.TestName}");
+                    var ping = new PingTest(_testResultServices);
+                    //TODO:Adding changer for test ping, ssh
+                    var testDto = _mapper.Map<TestDto>(test);
+                    ping.SetTest(testDto);
+                    while (true)
+                    {
+                        ping.PrepareHosts();
+                        await Task.Delay(test.TestIntervalInSeconds * 1000 * 60);
+                    }
+                    
+                });
+            }
+            
         }
         
     }

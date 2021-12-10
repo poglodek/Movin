@@ -7,6 +7,7 @@ using Movin.Database.Enum;
 using Movin.Dto.Host;
 using Movin.Dto.Test;
 using Movin.Dto.TestResult;
+using Movin.Exception;
 using Movin.Services.IServices;
 
 namespace Movin.TestingMethod
@@ -20,32 +21,38 @@ namespace Movin.TestingMethod
         {
             _testResultServices = testResultServices;
         }
-        public abstract void SetTest(TestDto testDto);
+
+        public void SetTest(TestDto testDto)
+        {
+            foreach (var host in testDto.Hosts)
+            {
+                if (!TestHelper.TryParseToIPAddress(host.Ip))
+                    throw new InCorrectIpAddress($"IP: {host.Ip} is in correct");
+            }
+            _TestDto = testDto;
+        }
 
         public void PrepareHosts()
         {
-            if (!_TestDto.TestEnable || _TestDto is null || _TestDto.Hosts.Count == 0)
+            if (_TestDto is null || !_TestDto.TestEnable  || _TestDto.Hosts.Count == 0)
                 return;
 
             var hosts = _TestDto.Hosts;
-
             foreach (var host in hosts)
             {
-                Task.Run((() =>
-                {
-                    var result = StartTest(host);
-                    if (_TestDto.SaveTestToDatabase)
-                        SaveResultToDataBase(host, result);
-                    if (_TestDto.LogTestToFile)
-                        //TODO:Save to database
-                        Console.WriteLine("LOG TO FILE");
-                }));
+                var result = StartTest(host);
+                if (_TestDto.SaveTestToDatabase)
+                    SaveResultToDataBase(host, result);
+                if (_TestDto.LogTestToFile)
+                    //TODO:Save to database
+                    Console.WriteLine("LOG TO FILE");
             }
         }
         public abstract TestingMethodResult StartTest(HostDto hostDto);
 
         protected void SaveResultToDataBase(HostDto dto, TestingMethodResult result)
         {
+            Console.WriteLine("Saving...");
             TestResultDto resultDto = new TestResultDto()
             {
                 HostId = dto.Id,

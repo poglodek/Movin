@@ -19,17 +19,6 @@ namespace Movin.TestingMethod
         {
             
         }
-        public override void SetTest(TestDto testDto)
-        {
-            if (testDto.TestType != TestType.PING)
-                throw new WrongTypeTestException($"Cannot parse this test to Ping StartTest");
-            foreach (var host in testDto.Hosts)
-            {
-                if (!TestHelper.TryParseToIPAddress(host.Ip))
-                    throw new InCorrectIpAddress($"IP: {host.Ip} is in correct");
-            }
-            _TestDto = testDto;
-        }
 
         public override TestingMethodResult StartTest(HostDto hostDto)
         {
