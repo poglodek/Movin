@@ -1,0 +1,53 @@
+﻿
+@using Movin.Dto.Test
+@using Movin.Dto.Host
+@using Movin.Database.Enum
+
+@model Movin.Dto.Test.TestDto
+
+@{
+    ViewBag.Title = "Add Test";
+    Layout = "_Layout";
+    IEnumerable<HostDto> hosts = ViewBag.Hosts;
+    IEnumerable<HostDto> selectedHosts = new List<HostDto>();
+}
+
+<h2>Add Test</h2>
+<form asp-controller="Test" asp-action="AddTest">
+    <div class="form-group">
+        <label>Test Name:</label>
+        <input asp-for="TestName" type="text" class="form-control"   placeholder="Enter Test Name">
+    </div>
+    <div class="form-group">
+        <label>Test Interval In Minutes:</label>
+        <input asp-for="TestIntervalInSeconds" type="number" class="form-control"   placeholder="Enter Number">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Log test to file:</label>
+        @Html.CheckBoxFor(m => m.LogTestToFile)
+    </div>
+    <div class="form-group">
+        <label>Test File Name:</label>
+        <input asp-for="TestFileName" type="text" class="form-control"  placeholder="Enter Test File Name">
+    </div>
+    <div class="form-group">
+        <label>Test File Path:</label>
+        <input asp-for="TestFilePath" type="text" class="form-control"   placeholder="Enter Test File Path">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Save test to Database:</label>
+        @Html.CheckBoxFor(m => m.SaveTestToDatabase)
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Send Email When Test Failure:</label>
+        @Html.CheckBoxFor(m => m.SendEmailWhenTestFailure)
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Test Enable:</label>
+        @Html.CheckBoxFor(m => m.TestEnable)
+    </div>
+    @Html.DropDownListFor(m => m.TestType, 
+        new SelectList(Enum.GetValues(typeof(TestType))), 
+        "Select Test Type")
+    <h3>When you want to add Host, please click edit Host on Test List.</h3>
+</form>

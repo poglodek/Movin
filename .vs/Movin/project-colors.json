@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "fe34d7e7-b753-44ad-b303-39f5557020eb": {
+      "ProjectGuid": "fe34d7e7-b753-44ad-b303-39f5557020eb",
+      "DisplayName": "Movin.Test",
+      "ColorIndex": 0
+    },
+    "4b857632-9c48-421b-88cb-9018bc121be6": {
+      "ProjectGuid": "4b857632-9c48-421b-88cb-9018bc121be6",
+      "DisplayName": "Movin.TestingMethod",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
