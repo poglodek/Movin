@@ -48,10 +48,15 @@ namespace Movin.Controllers
         [HttpGet("{id}")]
         public IActionResult Details([FromRoute]int id)
         {
+            return View(_testServices.GetTestDto(id));
+        }
+        [HttpGet("edit/{id}")]
+        public IActionResult Edit([FromRoute] int id)
+        {
             throw new NotImplementedException();
         }
-        [HttpGet("{id}")]
-        public IActionResult Edit([FromRoute] int id)
+        [HttpGet("edit/{id}")]
+        public IActionResult Edit([FromRoute] int id,TestDto dto)
         {
             throw new NotImplementedException();
         }

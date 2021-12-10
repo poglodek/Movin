@@ -9,4 +9,5 @@ public interface ITestServices
     IEnumerable<TestListDto> GetListDto(string options);
     IEnumerable<Test> GetActiveTest();
     bool AddTest(TestDto dto);
+    TestDto GetTestDto(int id);
 }

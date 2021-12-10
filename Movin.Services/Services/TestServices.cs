@@ -39,5 +39,12 @@ namespace Movin.Services.Services
             _dbContext.SaveChanges();
             return true;
         }
+
+        public TestDto GetTestDto(int id)
+        {
+            var test = _dbContext.Tests.FirstOrDefault();
+            if (test is null) throw new NotFoundException("Test not found");
+            return _mapper.Map<TestDto>(test);
+        }
     }
 }

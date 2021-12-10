@@ -1,0 +1,22 @@
+﻿@model Movin.Dto.Test.TestDto
+
+@{
+    ViewBag.Title = "Test";
+    Layout = "_Layout";
+}
+
+<h2>Test</h2>
+<h4>Test Name: @Html.DisplayFor(x=>x.TestName)</h4><br />
+<h4>Test Type: @Html.DisplayFor(x=>x.TestType)</h4><br />
+<h4>Test Interval In Minutes: @Html.DisplayFor(x=>x.TestIntervalInSeconds)</h4><br />
+<h4>Save Test Result to Database: @Html.DisplayFor(x=>x.SaveTestToDatabase)</h4><br />
+<h4>Log Test Result to File: @Html.DisplayFor(x=>x.LogTestToFile)</h4><br />
+<h4>File Name: @Html.DisplayFor(x=>x.TestFileName)</h4><br />
+<h4>File Path: @Html.DisplayFor(x=>x.TestFilePath)</h4><br />
+<h4>Send Email When Test Failure: @Html.DisplayFor(x=>x.SendEmailWhenTestFailure)</h4><br />
+<h4>Hosts: 
+@foreach (var item in Model.Hosts)
+{
+    @Html.DisplayFor(x => item);
+}
+</h4>
